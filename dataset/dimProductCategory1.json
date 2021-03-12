@@ -1,0 +1,41 @@
+{
+	"name": "dimProductCategory1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_datalab3_kubrick",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ProductCategory",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ParentProductCategoryID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StartDate",
+				"type": "datetime2",
+				"scale": 0
+			},
+			{
+				"name": "EndDate",
+				"type": "datetime2",
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dportas",
+			"table": "dimProductCategory"
+		}
+	}
+}
